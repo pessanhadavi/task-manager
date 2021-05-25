@@ -1,0 +1,6 @@
+<h1><%= @task.title.capitalize %></h1>
+<p><%= @task.details.capitalize %></p>
+<% @task.completed ? neg = "" : neg = "not" %>
+<p>The task is <%= neg %> completed</p>
+
+<%= link_to "Check all tasks", tasks_path %>
