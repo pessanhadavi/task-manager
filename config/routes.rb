@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   # List one task
   get 'tasks/:id', to: 'tasks#show', as: :task
+  # Repeats the prefix from above
+  delete 'tasks/:id', to: 'tasks#destroy'
 
 
 
