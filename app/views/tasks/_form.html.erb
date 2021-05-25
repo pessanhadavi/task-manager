@@ -3,5 +3,10 @@
   <%= f.text_field :title %>
   <%= f.label :details %> 
   <%= f.text_field :details %>
+
+  <% if task.persisted? %>
+    <%= f.check_box :completed %>
+    <%= f.label :completed %>
+  <% end %>
   <%= f.submit %>
 <% end %>
